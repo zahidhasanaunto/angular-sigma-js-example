@@ -23,9 +23,12 @@ export class AppComponent implements OnInit {
 
     const x0 = 0;
     const y0 = 0;
-    const r = 1;
 
     for (let i = 0; i < items; i++) {
+      // For Random Radius
+      const r = Math.floor(Math.random() * 50) + 10;
+      // For Fixed Radius
+      // const r = 1;
 
       const x = x0 + r * Math.cos(2 * Math.PI * i / items);
       const y = y0 + r * Math.sin(2 * Math.PI * i / items);
